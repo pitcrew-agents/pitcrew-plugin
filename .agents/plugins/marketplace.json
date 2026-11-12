@@ -1,0 +1,26 @@
+{
+  "name": "pitcrew-dev",
+  "owner": {
+    "name": "PitCrew",
+    "email": "support@gopitcrew.com"
+  },
+  "interface": {
+    "displayName": "PitCrew (Dev)"
+  },
+  "plugins": [
+    {
+      "name": "pitcrew-dev",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/pitcrew-agents/pitcrew-plugin-dev.git",
+        "path": "providers/openai",
+        "ref": "master"
+      },
+      "policy": {
+        "installation": "INSTALLED_BY_DEFAULT",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
