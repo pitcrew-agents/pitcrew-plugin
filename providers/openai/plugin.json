@@ -1,0 +1,46 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "pitcrew-dev",
+  "version": "0.1.0",
+  "description": "Build and run AI compliance agents by chatting. Describe an agent in plain English and PitCrew drafts it, publishes it to your workspace, and runs it on your documents, without leaving the conversation.",
+  "author": {
+    "name": "PitCrew",
+    "url": "https://www.gopitcrew.com/"
+  },
+  "homepage": "https://www.gopitcrew.com/",
+  "repository": "https://github.com/pitcrew-agents/pitcrew-plugin-dev",
+  "license": "MIT",
+  "keywords": [
+    "compliance",
+    "ai-agents",
+    "workflow-automation",
+    "financial-services",
+    "advisors",
+    "document-processing"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "PitCrew (Dev)",
+        "shortDescription": "Build and run AI compliance agents by chatting.",
+        "longDescription": "PitCrew turns plain-English requests into runnable compliance agents. Describe an agent, review the plan, and PitCrew publishes it to your workspace and runs it on your documents without leaving the conversation. Built for compliance teams, financial advisors, and operations teams who want to automate repeatable document work.",
+        "developerName": "PitCrew",
+        "category": "Productivity",
+        "websiteURL": "https://www.gopitcrew.com/",
+        "privacyPolicyURL": "https://www.gopitcrew.com/privacy",
+        "termsOfServiceURL": "https://www.gopitcrew.com/terms",
+        "supportURL": "https://www.gopitcrew.com/docs/mcp",
+        "defaultPrompt": [
+          "List my PitCrew agents",
+          "Build an agent that summarises Form ADV filings and emails the key risks to compliance@myfirm.com",
+          "Schedule my Policy Diff Checker to run every weekday at 9am Pacific"
+        ],
+        "logo": "./assets/icon.svg",
+        "composerIcon": "./assets/icon.svg"
+      },
+      "publication": {
+        "release_notes": "Initial dev build with 10 skills and a 33-tool MCP server covering agent build, run, collections, validation, policies, and triggers."
+      }
+    }
+  }
+}

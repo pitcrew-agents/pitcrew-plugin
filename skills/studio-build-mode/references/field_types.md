@@ -138,8 +138,7 @@ Always use the exact string in the `Code` column. Never invent variations.
  "validation": {"required": true}}
 
 {"key": "ack", "type": "consent", "label": "I agree",
- "config": {"text": "I have read and agree to the terms.", "textVersion": "v1"},
- "validation": {"required": true}}
+ "config": {"text": "I have read and agree to the terms.", "textVersion": "v1"}}
 ```
 
 ## Structure (2)
@@ -204,7 +203,7 @@ Always use the exact string in the `Code` column. Never invent variations.
 
 Always use `{"expr": "..."}` objects — never a plain string.
 
-## Binding sources
+## Binding sources (not supported by this builder yet — do not add `binding`)
 
 ```json
 "binding": {"source": "system_of_record", "path": "client.fieldName", "confidence": "high"}
