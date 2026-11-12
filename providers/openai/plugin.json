@@ -1,6 +1,6 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "pitcrew-dev",
+  "name": "pitcrew",
   "version": "0.1.0",
   "description": "Build and run AI compliance agents by chatting. Describe an agent in plain English and PitCrew drafts it, publishes it to your workspace, and runs it on your documents, without leaving the conversation.",
   "author": {
@@ -8,7 +8,7 @@
     "url": "https://www.gopitcrew.com/"
   },
   "homepage": "https://www.gopitcrew.com/",
-  "repository": "https://github.com/pitcrew-agents/pitcrew-plugin-dev",
+  "repository": "https://github.com/pitcrew-agents/pitcrew-plugin",
   "license": "MIT",
   "keywords": [
     "compliance",
@@ -21,7 +21,7 @@
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName": "PitCrew (Dev)",
+        "displayName": "PitCrew",
         "shortDescription": "Build and run AI compliance agents by chatting.",
         "longDescription": "PitCrew turns plain-English requests into runnable compliance agents. Describe an agent, review the plan, and PitCrew publishes it to your workspace and runs it on your documents without leaving the conversation. Built for compliance teams, financial advisors, and operations teams who want to automate repeatable document work.",
         "developerName": "PitCrew",
@@ -39,7 +39,7 @@
         "composerIcon": "./assets/icon.svg"
       },
       "publication": {
-        "release_notes": "Initial dev build with 10 skills and a 33-tool MCP server covering agent build, run, collections, validation, policies, and triggers."
+        "release_notes": "Production release. 10 skills plus MCP server integration for building and running compliance agents."
       }
     }
   }

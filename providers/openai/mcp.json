@@ -1,9 +1,9 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
   "mcpServers": {
-    "PitCrew MCP Dev": {
+    "PitCrew MCP": {
       "type": "streamable-http",
-      "url": "https://mcp.dev.gopitcrew.com/mcp"
+      "url": "https://mcp.gopitcrew.com/mcp"
     }
   }
 }

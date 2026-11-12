@@ -1,18 +1,18 @@
 {
-  "name": "pitcrew-dev",
+  "name": "pitcrew",
   "owner": {
     "name": "PitCrew",
     "email": "support@gopitcrew.com"
   },
   "interface": {
-    "displayName": "PitCrew (Dev)"
+    "displayName": "PitCrew"
   },
   "plugins": [
     {
-      "name": "pitcrew-dev",
+      "name": "pitcrew",
       "source": {
         "source": "git-subdir",
-        "url": "https://github.com/pitcrew-agents/pitcrew-plugin-dev.git",
+        "url": "https://github.com/pitcrew-agents/pitcrew-plugin.git",
         "path": "providers/openai",
         "ref": "master"
       },
