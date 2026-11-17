@@ -141,6 +141,8 @@ Always use the exact string in the `Code` column. Never invent variations.
  "config": {"text": "I have read and agree to the terms.", "textVersion": "v1"}}
 ```
 
+Rules: owner `client` only; signer `role` is `client` or `co_client`; `typedMustMatch` should be a `person_name` field; the signing date is stamped automatically, so there is no separate date field.
+
 ## Structure (2)
 
 | Name | Code | Notes |
