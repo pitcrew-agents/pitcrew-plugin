@@ -257,6 +257,10 @@ Max 3 repair attempts; if still failing, tell the user which errors remain.
 - Work out of the collection: no field without a source, or without the user's OK under "Added by me".
 - NEVER invent type names. Use only canonical strings from field_types.md.
 - `signature` needs `config.signers[{role, nameField}]` and `config.typedMustMatch`.
+- **Who signs.** A signature is always signed by the client or co-client themselves: `owner` stays `client`, the signer `role` is `client` or `co_client`, never `member`. The validator rejects anything else. An advisor or "registered representative" signature or name block from the source form is NOT a signature field: leave it out, or make it a `paragraph` that says the representative completes it separately, and tell the user.
+- **Sign and date is one field.** The date is stamped by the server when the client signs. Do not add a separate date field next to a signature, and do not ask the client to type a date for it.
+- **Advisor-filled fields** (`owner: member`) that are `required` must be filled by the advisor BEFORE the form is sent, or the send is blocked. Use them only for values the advisor really has; otherwise make the field client-owned.
+- **Typed name match.** `typedMustMatch` points at a `person_name` field. The client may type the full name or just first and last. Say so in the field's `helpText`.
 - `consent` needs `config.text` and `config.textVersion` and takes NO `validation` block. `heading`, `paragraph`, `disclosure`, `group`, `hidden` and `calculated` take none either; the validator rejects them ("Extra inputs are not permitted").
 - Only use `validation` keys the type allows (for example `minAge` only on `date_of_birth`, `minSelected` only on `multi_select`). `field_types.md` lists them.
 - `government_id` and `bank_account` are **secret and web-only** — never include them in SMS forms.
